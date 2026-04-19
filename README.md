@@ -7,27 +7,50 @@ This project is a simple 8-bit RISC-style processor designed in Verilog HDL. The
 The goal of this project is to understand how a processor works internally and how pipelining improves performance by allowing multiple instructions to be processed at the same time.
 
 
-Features
+Features:
+
 8-bit processor datapath
+
 Program Counter (PC)
+
 Instruction Memory
+
 Register File
+
 Arithmetic Logic Unit (ALU)
+
 Control Unit
+
 Data Memory
+
 Pipeline Registers:
+
 IF/ID
+
 ID/EX
+
 EX/MEM
+
 MEM/WB
+
 Basic LOAD and STORE support
+
+
+
 ALU operations:
+
 ADD
+
 SUB
+
 AND
+
 OR
+
 XOR
+
 GTKWave waveform verification
+
 Testbench for simulation
 
 
