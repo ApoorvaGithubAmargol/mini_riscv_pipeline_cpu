@@ -9,9 +9,9 @@ The goal of this project is to understand how a processor works internally and h
 -------------------------------------------------------------------------------------------------------------------------------
 **Features:**
 
-**8-bit processor datapath; Program Counter (PC); Instruction Memory; Register File; Arithmetic Logic Unit (ALU); Control Unit; Data Memory
-**
-**Pipeline Registers:**
+* **8-bit processor datapath; Program Counter (PC); Instruction Memory; Register File; Arithmetic Logic Unit (ALU); Control Unit; Data Memory**
+
+* **Pipeline Registers:**
 
 1. IF/ID
 
@@ -25,7 +25,7 @@ The goal of this project is to understand how a processor works internally and h
 
 
 
-**ALU operations:**
+* **ALU operations:**
 
 ADD
 
@@ -37,9 +37,9 @@ OR
 
 XOR
 
-**GTKWave waveform verification**
+* GTKWave waveform verification
 
-**Testbench for simulation**
+* Testbench for simulation
 -------------------------------------------------------------------------------------------------------------------------------------
 
 Processor Pipeline Stages
