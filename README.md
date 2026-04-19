@@ -78,10 +78,16 @@ Either ALU result or Memory result is selected
 Tools Used:
 
 Verilog HDL
+
 Icarus Verilog
+
 GTKWave
+
 VS Code
+
 Git
+
 GitHub
+
 
 
