@@ -7,37 +7,25 @@ This project is a simple 8-bit RISC-style processor designed in Verilog HDL. The
 The goal of this project is to understand how a processor works internally and how pipelining improves performance by allowing multiple instructions to be processed at the same time.
 
 -------------------------------------------------------------------------------------------------------------------------------
-Features:
+**Features:**
 
-8-bit processor datapath
+**8-bit processor datapath; Program Counter (PC); Instruction Memory; Register File; Arithmetic Logic Unit (ALU); Control Unit; Data Memory
+**
+**Pipeline Registers:**
 
-Program Counter (PC)
+1. IF/ID
 
-Instruction Memory
+2. ID/EX
 
-Register File
+3. EX/MEM
 
-Arithmetic Logic Unit (ALU)
+4. MEM/WB
 
-Control Unit
-
-Data Memory
-
-Pipeline Registers:
-
-IF/ID
-
-ID/EX
-
-EX/MEM
-
-MEM/WB
-
-Basic LOAD and STORE support
+5. Basic LOAD and STORE support
 
 
 
-ALU operations:
+**ALU operations:**
 
 ADD
 
@@ -49,9 +37,9 @@ OR
 
 XOR
 
-GTKWave waveform verification
+**GTKWave waveform verification**
 
-Testbench for simulation
+**Testbench for simulation**
 -------------------------------------------------------------------------------------------------------------------------------------
 
 Processor Pipeline Stages
@@ -74,7 +62,7 @@ Memory data is stored in MEM/WB register
 5. Write Back (WB)
 Result is written back into Register File
 Either ALU result or Memory result is selected
-------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 Tools Used:
 
 Verilog HDL
@@ -89,5 +77,17 @@ Git
 
 GitHub
 
+------------------------------------------------------------------------------------------------------------------------------
+Learning Outcome
+
+This project helps in understanding:
+
+Processor datapath design
+Pipeline architecture
+Memory access flow
+Register file operation
+Verilog module design
+Hardware simulation and debugging
+Waveform analysis using GTKWave
 
 
