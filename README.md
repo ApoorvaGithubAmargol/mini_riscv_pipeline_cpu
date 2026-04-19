@@ -74,5 +74,14 @@ Memory data is stored in MEM/WB register
 5. Write Back (WB)
 Result is written back into Register File
 Either ALU result or Memory result is selected
+------------------------------------------------------------------------------------------------------------------------------------
+Tools Used:
+
+Verilog HDL
+Icarus Verilog
+GTKWave
+VS Code
+Git
+GitHub
 
 
