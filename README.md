@@ -6,7 +6,7 @@ This project is a simple 8-bit RISC-style processor designed in Verilog HDL. The
 
 The goal of this project is to understand how a processor works internally and how pipelining improves performance by allowing multiple instructions to be processed at the same time.
 
-
+-------------------------------------------------------------------------------------------------------------------------------
 Features:
 
 8-bit processor datapath
@@ -52,7 +52,7 @@ XOR
 GTKWave waveform verification
 
 Testbench for simulation
-
+-------------------------------------------------------------------------------------------------------------------------------------
 
 Processor Pipeline Stages
 1. Instruction Fetch (IF)
