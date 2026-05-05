@@ -1,98 +1,71 @@
-***8 BIT RISC V BASED PROCESSOR***
+# 🧠 8-bit Pipelined RISC CPU in Verilog
 
-Project Overview
+![Verilog](https://img.shields.io/badge/Language-Verilog-blue)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Simulation](https://img.shields.io/badge/Simulated%20on-GTKWave-orange)
+![Toolchain](https://img.shields.io/badge/Toolchain-Icarus%20Verilog-lightgrey)
 
-This project is a simple 8-bit RISC-style processor designed in Verilog HDL. The processor follows a simplified pipelined architecture inspired by RISC-V concepts such as instruction fetch, decode, execute, memory access, and writeback.
+---
 
-The goal of this project is to understand how a processor works internally and how pipelining improves performance by allowing multiple instructions to be processed at the same time.
+## 📌 Project Overview
 
--------------------------------------------------------------------------------------------------------------------------------
-**Features:**
+This project implements a **custom 8-bit RISC-style processor** using **Verilog HDL**.
 
-* **8-bit processor datapath; Program Counter (PC); Instruction Memory; Register File; Arithmetic Logic Unit (ALU); Control Unit; Data Memory**
+> ⚠️ **Important:** This is **NOT a RISC-V processor**.  
+> It is a **custom Instruction Set Architecture (ISA)** inspired by core RISC principles:
+- Simplicity  
+- Fixed instruction format  
+- Pipelined execution  
 
-* **Pipeline Registers:**
+The processor uses a **5-stage pipeline**.
 
-1. IF/ID
+---
 
-2. ID/EX
+## 🏗️ Pipeline Architecture
 
-3. EX/MEM
+![Pipeline](https://raw.githubusercontent.com/ApoorvaGithubAmargol/mini_riscv_pipeline_cpu/main/git_images_/pipeline.png)
 
-4. MEM/WB
+---
 
-5. Basic LOAD and STORE support
+## ⚙️ Key Features
 
+- Custom 8-bit ISA (Non RISC-V)
+- 5-stage pipelined architecture  
+- Modular Verilog design  
+- Separate instruction & data memory  
+- Register file with read/write support  
+- ALU supporting multiple operations  
+- Load and Store instructions  
+- Pipeline registers:
+  - IF/ID  
+  - ID/EX  
+  - EX/MEM  
+  - MEM/WB  
+- Verified using GTKWave  
 
+---
 
-* **ALU operations:**
+## 🧩 Architecture Breakdown
 
-ADD
+### 🔹 IF (Instruction Fetch)
+- Program Counter (PC) generates address  
+- Instruction fetched from instruction memory  
+- Stored in IF/ID  
 
-SUB
+### 🔹 ID (Instruction Decode)
+- Instruction decoded  
+- Control signals generated  
+- Register file read  
 
-AND
+### 🔹 EX (Execute)
+- ALU performs operations  
 
-OR
+### 🔹 MEM (Memory)
+- LOAD / STORE operations  
 
-XOR
+### 🔹 WB (Write Back)
+- Result written back to register file  
 
-* GTKWave waveform verification
+---
 
-* Testbench for simulation
--------------------------------------------------------------------------------------------------------------------------------------
-
-Processor Pipeline Stages
-1. Instruction Fetch (IF)
-Program Counter generates instruction address
-Instruction is fetched from Instruction Memory
-Instruction and PC are stored in IF/ID register
-2. Instruction Decode (ID)
-Opcode is decoded by Control Unit
-Register File reads source operands
-Control signals are generated
-Data is stored in ID/EX register
-3. Execute (EX)
-ALU performs required operation
-Arithmetic and logical results are generated
-Output is stored in EX/MEM register
-4. Memory Access (MEM)
-Data Memory performs LOAD or STORE operations
-Memory data is stored in MEM/WB register
-5. Write Back (WB)
-Result is written back into Register File
-Either ALU result or Memory result is selected
-------------------------------------------------------------------------------------------------------------------------
-Tools Used:
-
-Verilog HDL
-
-Icarus Verilog
-
-GTKWave
-
-VS Code
-
-Git
-
-GitHub
-
-------------------------------------------------------------------------------------------------------------------------------
-**Output Waveform**
-
-
-
-------------------------------------------------------------------------------------------------------------------------------
-**Learning Outcome**
-
-This project helps in understanding:
-
-Processor datapath design
-Pipeline architecture
-Memory access flow
-Register file operation
-Verilog module design
-Hardware simulation and debugging
-Waveform analysis using GTKWave
-
-
+## 🧾 Instruction Format
