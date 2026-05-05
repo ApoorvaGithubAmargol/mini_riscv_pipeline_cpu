@@ -93,23 +93,41 @@ The processor uses a **5-stage pipeline**.
 
 ## Project Structure
 risc_project/
+
 │── README.md
+
 │── src_r/
+
 │ ├── alu.v
+
 │ ├── cpu_top.v
+
 │ ├── cu.v
+
 │ ├── data_mem.v
+
 │ ├── ex_mem_reg.v
+
 │ ├── id_ex_reg.v
+
 │ ├── if_id_reg.v
+
 │ ├── instruction_mem.v
+
 │ ├── mem_wb_reg.v
+
 │ ├── pc.v
+
 │ └── register_file.v
+
 │── tbr/
+
 │ └── cpu_tb.v
+
 │── cpu_out (ignored)
+
 │── cpu.vcd (ignored)
+
 
 
 ---
