@@ -167,26 +167,26 @@ gtkwave cpu.vcd
 
 ### Highlights
 
-Custom ISA
-Clean pipeline implementation
-Beginner-friendly design
-Clear visualization using GTKWave
+- Custom ISA
+- Clean pipeline implementation
+- Beginner-friendly design
+- Clear visualization using GTKWave
 
 ### Future Work
-Hazard detection
-Forwarding
-Branch & jump support
-16/32-bit scaling
+- Hazard detection
+- Forwarding
+- Branch & jump support
+- 16/32-bit scaling
 
 ### Tools
-Verilog
-Icarus Verilog
-GTKWave
-VS Code
-GitHub
+- Verilog
+- Icarus Verilog
+- GTKWave
+- VS Code
+- GitHub
 
 ### Learning Outcome
-CPU datapath design
-Pipeline execution
-Control signal flow
-Memory interaction
+- CPU datapath design
+- Pipeline execution
+- Control signal flow
+- Memory interaction
